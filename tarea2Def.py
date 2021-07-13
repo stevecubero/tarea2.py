@@ -33,14 +33,13 @@ def procesar ():
     #print ("La cantidad a retirar total es de: ", saldoDepositos)
     #print ("La cantidad de retiros del dia fue de: ", conteoDepositos)
     #print ("La cantidad total en retiros fue de", saldoTotalDepositos)
-    
-    
+       
 
 def menuPrincipal ():
     print ("Tipo de transaccion:" "\nD = Deposito" "\nR = Retiro" "\nPROCESAR = Procesar todas las transacciones")
     selecionTransaccion = ""
     while selecionTransaccion != "PROCESAR":
-        selecionTransaccion = input ("Seleccione el tipo de transaccion que desea ejecutar: ")
+        selecionTransaccion = input ("Seleccione el tipo de transaccion que desea ejecutar. Digite PROCESAR para finalizar y hacer el calculo final: ")
         if selecionTransaccion == "D":
             depositos(saldoDepositos,conteoDepositos,saldoTotalDepositos)
         elif selecionTransaccion == "R":
